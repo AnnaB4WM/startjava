@@ -1,0 +1,10 @@
+*.class
+*.docx
+*.png
+.idea/
+lib/
+out/
+*.DS_Store
+*.iml
+access.log
+doc/**/*.txt
