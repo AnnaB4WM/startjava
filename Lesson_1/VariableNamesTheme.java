@@ -34,8 +34,8 @@ public class VariableNamesTheme {
         System.out.println("процент по вкладу = " + interest);
 
         // (переменная хранит символ) &
-        char simbol = '&';
-        System.out.println("переменная хранит символ - " + simbol);
+        char ampersand = '&';
+        System.out.println("переменная хранит символ - " + ampersand);
 
         // код ошибки
         String errorCode = "404";
@@ -50,8 +50,8 @@ public class VariableNamesTheme {
         System.out.println("число нулей = " + numberOfZeroes);
 
         // уникальное число
-        int uniqNumber = 777;
-        System.out.println("уникальное число = " + uniqNumber);
+        int uniqueNumber = 777;
+        System.out.println("уникальное число = " + uniqueNumber);
 
         // случайное число
         int randomNumber = 8;
@@ -78,8 +78,8 @@ public class VariableNamesTheme {
         System.out.println("пункт меню - " + menuOption);
 
         // стоимость кофе на вынос
-        double coffeeToGo = 299.99;
-        System.out.println("стоимость кофе на вынос = " + coffeeToGo);
+        double coffeeToGoPrice = 299.99;
+        System.out.println("стоимость кофе на вынос = " + coffeeToGoPrice);
 
         // дата начала (чего-либо)
         String startDate = "07.01.2024";
@@ -90,8 +90,8 @@ public class VariableNamesTheme {
         System.out.println("окончание диапазона = " + endRange);
 
         // полное имя работника месяца
-        String employeeOfTheMonthFullName = "Иван Иванович Иванов";
-        System.out.println("полное имя работника месяца - " + employeeOfTheMonthFullName);
+        String employeeOfMonthFullName = "Иван Иванович Иванов";
+        System.out.println("полное имя работника месяца - " + employeeOfMonthFullName);
 
         // заголовок электронной книги
         String ebookTitle = "Variables";
@@ -106,8 +106,8 @@ public class VariableNamesTheme {
         System.out.println("вместимость (чего-либо) - " + capacity);
 
         // счетчик
-        double indicator = 36.6;
-        System.out.println("счетчик = " + indicator);
+        double counter = 36.6;
+        System.out.println("счетчик = " + counter);
 
         // путь до файла
         String filePath = "C:/";
@@ -115,44 +115,44 @@ public class VariableNamesTheme {
 
         // количество чисел в каждой строке
         int numberOfDigitsInEveryString = 3;
-        System.out.println("количество чисел в каждой строке = " + numberOfDigitsInEveryString);
+        System.out.println("количество чисел в каждой строке = " + numberOfDigitsInEveryString + "\n");
 
         System.out.println("2. boolean переменные");
         // сотни равны?
-        boolean hundredsAreEqual = true;
-        System.out.println("сотни равны? " + hundredsAreEqual);
+        boolean isHundredsEqual = true;
+        System.out.println("сотни равны? " + isHundredsEqual);
 
         // компьютер включен?
-        boolean computerIsOn = false;
-        System.out.println("компьютер включен? " + computerIsOn);
+        boolean isComputerOn = false;
+        System.out.println("компьютер включен? " + isComputerOn);
 
         // есть равные цифры?
-        boolean numbersAreEqual = true;
-        System.out.println("есть равные цифры? " + numbersAreEqual);
+        boolean hasEqualNumbers = true;
+        System.out.println("есть равные цифры? " + hasEqualNumbers);
 
         // (что-либо) создано?
         boolean isCreate = true;
         System.out.println("(что-либо) создано? " + isCreate);
 
         // (что-либо) пустое?
-        boolean empty = true;
-        System.out.println("(что-либо) пустое? " + empty);
+        boolean isEmpty = true;
+        System.out.println("(что-либо) пустое? " + isEmpty);
 
         // (что-либо) активное?
-        boolean active = false;
-        System.out.println("(что-либо) активное? " + active);
+        boolean isActive = false;
+        System.out.println("(что-либо) активное? " + isActive);
 
         // новый?
         boolean isNew = true;
         System.out.println("новый? " + isNew);
 
         // электронная почта действительная?
-        boolean emailIsActive = true;
-        System.out.println("электронная почта действительная? " + emailIsActive);
+        boolean isEmailActive = true;
+        System.out.println("электронная почта действительная? " + isEmailActive);
 
         // имеются уникальные строки?
-        boolean haveUniqStrings = false;
-        System.out.println("имеются уникальные строки? " + haveUniqStrings + "\n");
+        boolean hasUniqueStrings = false;
+        System.out.println("имеются уникальные строки? " + hasUniqueStrings + "\n");
 
         System.out.println("3. Аббревиатуры");
         // старый universally unique identifier

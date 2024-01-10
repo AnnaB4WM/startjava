@@ -1,34 +1,34 @@
 public class VariablesTheme {
     public static void main(String[] args) {
         System.out.println("1. Вывод характеристик компьютера");
-        String os = "Windows 11";
-        String osManufacture = "Windows Corporation";
-        int ram = 8;
-        String ramManufacturer = "Samsung";
-        String cpu = "Intel";
-        int freqCpu = 2500;
-        int numberOfCpu = 4;
-        int hddVolume = 3;
+        float osBuild = 22631.2861f;
+        byte ram = 8;
+        long ramFreq = 3200l;
+        long cpu = 5600l;
+        double freqCpu = 3.3;
+        short numberOfCpu = 4;
+        int hddVolume = 512;
+        char gbLetter1 = 71;
+        char gbLetter2 = 66;
         System.out.println("Характеристика компьютера:\n" +
-                "Операционная система: " + os + "\n" +
-                "Производитель операционной системы: " + osManufacture + "\n" +
-                "Оперативная память: " + ram + "\n" +
-                "Производитель оперативной памяти: " + ramManufacturer + "\n" +
+                "Сборка: " + osBuild + "\n" +
+                "Оперативная память: " + ram + " " + gbLetter1 + gbLetter2 + "\n" +
+                "Частота оперативной памяти: " + ramFreq + "\n" +
                 "Процессор: " + cpu + "\n" +
                 "Частота процессора: " + freqCpu + "\n" +
                 "Количество ядер в процессоре: " + numberOfCpu + "\n" +
-                "Ёмкость жёсткого диска: " + hddVolume + "\n");
+                "Ёмкость жёсткого диска: " + hddVolume + " " + gbLetter1 + gbLetter2 +"\n");
 
         System.out.println("2. Расчет стоимости товара со скидкой");
         int penPrice = 100;
         int bookPrice = 200;
         double discount = 0.11;
-        int sum = penPrice + bookPrice;
-        int sumDiscount = (int) (sum * discount);
-        int totalPrice = sum - sumDiscount;
-        System.out.println("Общая стоимость товаров без скидки: " + sum + " руб.\n" +
-                "Сумма скидки: " + sumDiscount + " руб.\n" +
-                "Общая стоимость товаров со скидкой: " + totalPrice + " руб.\n");
+        int sumWithoutDiscount = penPrice + bookPrice;
+        int discountSum = (int) (sumWithoutDiscount * discount);
+        int discountPrice = sumWithoutDiscount - discountSum;
+        System.out.println("Общая стоимость товаров без скидки: " + sumWithoutDiscount + " руб.\n" +
+                "Сумма скидки: " + discountSum + " руб.\n" +
+                "Общая стоимость товаров со скидкой: " + discountPrice + " руб.\n");
 
         System.out.println("3. Вывод слова JAVA");
         System.out.println("   J    a  v     v  a");
@@ -66,44 +66,39 @@ public class VariablesTheme {
         int a = 2;
         int b = 5;
         int c = a;
-        System.out.println("с помощью третьй переменной: " + "\n" +
+        System.out.println("с помощью третьей переменной:\n" +
                 "исходные значения переменных a = " + a + ", b = " +  b);
         a = b;
         b = c;
         System.out.println("новые значения переменных a = " + a + ", b = " +  b);
-        System.out.println("с помощью арифметических операций: " + "\n" +
+        System.out.println("с помощью арифметических операций:\n" +
                 "исходные значения переменных a = " + a + ", b = " +  b);
-        a = a + b;
+        a += b;
         b = a - b;
-        a = a - b;
+        a -= b;
         System.out.println("новые значения переменных a = " + a + ", b = " +  b);
-        System.out.println("с помощью побитовой операции: " + "\n" +
+        System.out.println("с помощью побитовой операции:\n" +
                 "исходные значения переменных a = " + a + ", b = " +  b);
-        a = a^b;
-        b = a^b;
-        a = a^b;
+        a ^= b;
+        b ^= a;
+        a ^= b;
         System.out.println("новые значения переменных a = " + a + ", b = " +  b + "\n");
 
         System.out.println("6. Вывод символов и их кодов");
         char dollar = '$';
-        int ascii36 = (int) dollar;
-        System.out.println("код символа - " + ascii36 + "\n" +
+        System.out.println("код символа - " + (int) dollar + "\n" +
                 "соответствующий коду символ - " + dollar);
         char asterisk = '*';
-        int ascii42 = (int) asterisk;
-        System.out.println("код символа - " + ascii42 + "\n" +
+        System.out.println("код символа - " + (int) asterisk + "\n" +
                 "соответствующий коду символ - " + asterisk);
         char atSign = '@';
-        int ascii64 = (int) atSign;
-        System.out.println("код символа - " + ascii64 + "\n" +
+        System.out.println("код символа - " + (int) atSign + "\n" +
                 "соответствующий коду символ - " + atSign);
         char verticalBar = '|';
-        int ascii124 = (int) verticalBar;
-        System.out.println("код символа - " + ascii124 + "\n" +
+        System.out.println("код символа - " + (int) verticalBar + "\n" +
                 "соответствующий коду символ - " + verticalBar);
         char tilde = '~';
-        int ascii126 = (int) tilde;
-        System.out.println("код символа - " + ascii126 + "\n" +
+        System.out.println("код символа - " + (int) tilde + "\n" +
                 "соответствующий коду символ - " + tilde + "\n");
 
         System.out.println("7. Вывод в консоль ASCII-арт Дюка");
@@ -112,24 +107,24 @@ public class VariablesTheme {
         char underscore = '_';
         char leftParenthesis = '(';
         char rightParenthesis = ')';
-        System.out.println("    " + slash + "" + backSlash + "\n   " +
-                slash + "  " + backSlash + "\n  " +
-                slash + "" + underscore + "" + leftParenthesis + " " + rightParenthesis + "" +
-                backSlash + "\n " + slash + "      " + backSlash + "\n" +
-                slash + "" + underscore + underscore + underscore + underscore + slash + "" +
+        System.out.println("    " + slash + backSlash + "\n" +
+                "   " + slash + "  " + backSlash + "\n" +
+                "  " + slash + underscore + leftParenthesis + " " + rightParenthesis +
+                backSlash + "\n" + " " + slash + "      " + backSlash + "\n" +
+                slash + underscore + underscore + underscore + underscore + slash + "" +
                 backSlash + underscore + underscore + backSlash + "\n");
 
         System.out.println("8. Вывод количества сотен, десятков и единиц числа");
         int num = 123;
         int hundreds = num / 100;
         int tens = (num % 100) / 10;
-        int digit = num % 10;
-        int sum1 = hundreds + tens + digit;
-        int multiplication = hundreds * tens * digit;
-        System.out.println("Число " + num + " содержит:" + "\n" +
+        int ones = num % 10;
+        int sum1 = hundreds + tens + ones;
+        int multiplication = hundreds * tens * ones;
+        System.out.println("Число " + num + " содержит:\n" +
                 "сотен - " + hundreds + "\n" +
                 "десятков - " + tens + "\n" +
-                "единиц - " + digit + "\n" +
+                "единиц - " + ones + "\n" +
                 "Сумма его цифр = " + sum1 + "\n" +
                 "Произведение = " + multiplication + "\n");
 
