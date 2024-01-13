@@ -3,21 +3,23 @@ public class VariablesTheme {
         System.out.println("1. Вывод характеристик компьютера");
         float osBuild = 22631.2861f;
         byte ram = 8;
-        long ramFreq = 3200l;
+        long freqRam = 3200l;
         long cpu = 5600l;
         double freqCpu = 3.3;
         short numberOfCpu = 4;
         int hddVolume = 512;
-        char gbLetter1 = 71;
-        char gbLetter2 = 66;
+        char gLetter = 'G';
+        char bLetter = 'B';
+        boolean isComputerOn = true;
         System.out.println("Характеристика компьютера:\n" +
                 "Сборка: " + osBuild + "\n" +
-                "Оперативная память: " + ram + " " + gbLetter1 + gbLetter2 + "\n" +
-                "Частота оперативной памяти: " + ramFreq + "\n" +
+                "Оперативная память: " + ram + " " + gLetter + bLetter + "\n" +
+                "Частота оперативной памяти: " + freqRam + "\n" +
                 "Процессор: " + cpu + "\n" +
                 "Частота процессора: " + freqCpu + "\n" +
                 "Количество ядер в процессоре: " + numberOfCpu + "\n" +
-                "Ёмкость жёсткого диска: " + hddVolume + " " + gbLetter1 + gbLetter2 +"\n");
+                "Ёмкость жёсткого диска: " + hddVolume + " " + gLetter + bLetter +
+                "Компьютер включен? " + isComputerOn +"\n");
 
         System.out.println("2. Расчет стоимости товара со скидкой");
         int penPrice = 100;
