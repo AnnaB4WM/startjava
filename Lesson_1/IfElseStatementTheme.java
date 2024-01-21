@@ -44,7 +44,6 @@ public class IfElseStatementTheme {
 
         System.out.println("3. Проверка числа");
         int num = -54;
-
         System.out.print(num + " является");
         if (num == 0) {
             System.out.println(" нулем\n");
@@ -72,25 +71,24 @@ public class IfElseStatementTheme {
         int num2Tens = (num2 % 100) / 10;
         int num2Ones = num2 % 10;
 
-        char digitNumber = '0';
         System.out.println("исходные числа - " + num1 + ", " + num2);
         if (num1Hundreds != num2Hundreds && num1Tens != num2Tens && num1Ones != num2Ones) {
             System.out.println("равных цифр нет");
         } else {
             System.out.print("одинаковые в них цифры - ");
             if (num1Hundreds == num2Hundreds) {
-                digitNumber = '1';
+                System.out.println("3");;
                 System.out.print(num1Hundreds + ", ");
             }
             if (num1Tens == num2Tens) {
-                digitNumber = '2';
+                System.out.println("2");
                 System.out.print(num2Tens + ", ");
             }
             if (num1Ones == num2Ones) {
-                digitNumber = '3';
+                System.out.println("1");
                 System.out.println(num1Ones);
             }
-            System.out.print("номера разрядов - " + digitNumber + "\n\n");
+            System.out.print("номера разрядов - " + "\n\n");
         }
 
         System.out.println("5. Определение символа по его коду");
@@ -108,49 +106,47 @@ public class IfElseStatementTheme {
 
         System.out.println("6. Подсчет суммы вклада и начисленных банком %");
         int deposit = 301_000;
-        double percent;
-        System.out.println("сумма вклада - " + deposit);
+        double percent = 0.05;
 
+        System.out.println("сумма вклада - " + deposit);
         if (deposit > 300_000) {
             percent = 0.1;
         } else if (deposit > 100_000 && deposit <= 300_000) {
             percent = 0.07;
-        } else {
-            percent = 0.05;
         }
         System.out.println("сумма начисленного % - " + percent * deposit);
         System.out.println("итоговая сумма с % - " + ((percent * deposit) + deposit) + "\n");
 
         System.out.println("7. Определение оценки по предметам");
         int historyPercent = 59;
-        int historyAverageGrade = 3;
+        int historyGrade = 3;
 
         if (historyPercent > 91) {
-            historyAverageGrade = 5;
+            historyGrade = 5;
         } else if (historyPercent > 73 && historyPercent < 91) {
-            historyAverageGrade = 4;
+            historyGrade = 4;
         } else if (historyPercent <= 60) {
-            historyAverageGrade = 2;
+            historyGrade = 2;
         } else {
-            System.out.print(historyAverageGrade);
+            System.out.print(historyGrade);
         }
-        System.out.println("история - " + historyAverageGrade);
+        System.out.println("история - " + historyGrade);
 
         int programmingPercent = 92;
-        int programmingAverageGrade = 3;
+        int programmingGrade = 3;
         if (programmingPercent > 91) {
-            programmingAverageGrade = 5;
+            programmingGrade = 5;
         } else if (programmingPercent > 73 && programmingPercent < 91) {
-            programmingAverageGrade = 4;
+            programmingGrade = 4;
         } else if (programmingPercent <= 60) {
-            programmingAverageGrade = 2;
+            programmingGrade = 2;
         } else {
-            System.out.println(historyAverageGrade);
+            System.out.println(historyGrade);
         }
-        System.out.println("программирование - " + historyAverageGrade);
+        System.out.println("программирование - " + historyGrade);
         int averagePercent = (historyPercent + programmingPercent) / 2;
         System.out.println("средний балл оценок по предметам - " +
-                (historyAverageGrade + programmingAverageGrade) / 2);
+                (historyGrade + programmingGrade) / 2);
         System.out.println("средний % по предметам - " + averagePercent + "\n");
 
         System.out.println("8. Расчет годовой прибыли");
