@@ -75,20 +75,16 @@ public class IfElseStatementTheme {
         if (num1Hundreds != num2Hundreds && num1Tens != num2Tens && num1Ones != num2Ones) {
             System.out.println("равных цифр нет");
         } else {
-            System.out.print("одинаковые в них цифры - ");
+            System.out.print("одинаковые в них цифры (номера разрядов) - ");
             if (num1Hundreds == num2Hundreds) {
-                System.out.println("3");;
-                System.out.print(num1Hundreds + ", ");
+                System.out.print(num1Hundreds + "(3); ");
             }
             if (num1Tens == num2Tens) {
-                System.out.println("2");
-                System.out.print(num2Tens + ", ");
+                System.out.print(num2Tens + "(2); ");
             }
             if (num1Ones == num2Ones) {
-                System.out.println("1");
-                System.out.println(num1Ones);
+                System.out.println(num1Ones + "(1)\n");
             }
-            System.out.print("номера разрядов - " + "\n\n");
         }
 
         System.out.println("5. Определение символа по его коду");

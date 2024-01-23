@@ -1,6 +1,7 @@
 *.class
 *.docx
 *.png
+*.jpg
 .idea/
 lib/
 out/
