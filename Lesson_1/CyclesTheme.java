@@ -46,19 +46,17 @@ public class CyclesTheme {
         System.out.println("\nсумма - " + sum + "\n");
 
         System.out.println("4. Вывод чисел в несколько строк");
-        for (int i = 1; i < 24; i += 10) {
+        int count = 0;
+        for (int i = 1; i < 24; i += 2) {
+            count++;
             System.out.printf("%3d", i);
-            for (int j = 2; j < 9; j += 2) {
-                if ((i + j) > 23) {
-                    System.out.printf("%3d%3d%3d", 0, 0, 0);
-                    break;
-                }
-                System.out.printf("%3d", i + j);
+            if (count % 5 == 0) {
+                System.out.println();
+            } else {
             }
-            System.out.println();
         }
 
-        System.out.println("\n5. Проверка количества двоек числа на четность/нечетность");
+        System.out.println("\n\n5. Проверка количества двоек числа на четность/нечетность");
         int num = 3242592;
         int numCopy = num;
         int countTwos = 0;
