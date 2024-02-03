@@ -3,7 +3,6 @@ import java.util.Random;
 public class RpsGameFormatting {
 
     // Игра Камень-Ножницы-Бумага
-
     public static void main(String[] args) throws InterruptedException {
         String rock = "✊";
         String scissors = "✌\uFE0F";
@@ -60,8 +59,8 @@ public class RpsGameFormatting {
         }
 
         boolean isName1Equal = sign1.equals(rock) && sign2.equals(scissors) ||
-        sign1.equals(scissors) && sign2.equals(paper) ||
-        sign1.equals(paper) && sign2.equals(rock);
+                sign1.equals(scissors) && sign2.equals(paper) ||
+                sign1.equals(paper) && sign2.equals(rock);
 
         if (isName1Equal) {
             System.out.println("\nПобедил - " + name1);
