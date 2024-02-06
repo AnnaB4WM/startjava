@@ -7,9 +7,9 @@ public class WolfTest {
         polkan.weight = 35.2;
         polkan.age = 3;
         polkan.color = "белый";
-        System.out.println("Волк по кличке " + polkan.nickname + ", пол " + polkan.gender +
-                ", его вес " + polkan.weight + ", ему " + polkan.age + " года" + ", его окрас " +
-                polkan.color);
+        System.out.println("Волк по кличке " + polkan.nickname + ", пол "+
+                polkan.gender + ", его вес " + polkan.weight + ", ему " +
+                polkan.age + " года" + ", его окрас " + polkan.color);
 
         polkan.move();
         polkan.sit();
