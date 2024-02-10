@@ -11,16 +11,16 @@ public class CalculatorTest {
         String answer = "да";
         while (answer.equals("да")) {
             System.out.print("Введите первое число: ");
-            int firstNumber = scanner.nextInt();
-            calculator.setFirstNumber(firstNumber);
+            int a = scanner.nextInt();
+            calculator.setA(a);
 
             System.out.print("Введите знак математической операции: ");
             char mathOperation = scanner.next().charAt(0);
             calculator.setMathOperation(mathOperation);
 
             System.out.print("Введите второе число: ");
-            int secondNumber = scanner.nextInt();
-            calculator.setSecondNumber(secondNumber);
+            int b = scanner.nextInt();
+            calculator.setB(b);
 
             calculator.calculate();
             do {

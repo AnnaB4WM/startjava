@@ -10,8 +10,8 @@ public class Jaeger {
     public Jaeger() {
     }
 
-    public Jaeger(String modelName, String mark, String origin, float height,
-        float weight, int strength) {
+    public Jaeger(String modelName, String mark, String origin,
+            float height, float weight, int strength) {
         this.modelName = modelName;
         this.mark = mark;
         this.origin = origin;

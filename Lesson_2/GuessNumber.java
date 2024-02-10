@@ -1,5 +1,5 @@
-import java.util.Random;
 import java.util.Scanner;
+import java.util.Random;
 
 public class GuessNumber {
 
@@ -11,30 +11,32 @@ public class GuessNumber {
         this.player2 = player2;
     }
 
-    public void startGame() {
+    public void start() {
         Random random = new Random();
-        int guessNumber = random.nextInt(100);
+        int guessNumber = random.nextInt(100 + 1);
         Scanner scanner = new Scanner(System.in);
         while (true) {
-            System.out.println("Ход первого игрока, введите число");
+            System.out.print("Ход первого игрока, введите число: ");
             int num = scanner.nextInt();
-            System.out.println("Первый игрок ввел число " + num);
+            System.out.println("Игрок " + player1.getName() + " ввел число: " + num);
             if (num == guessNumber) {
-                System.out.println("Вы победили");
+                System.out.println("Победил игрок " + player1.getName() + "!!!");
                 break;
-            } else if (num > guessNumber) {
+            }
+            if (num > guessNumber) {
                 System.out.println("Число " + num + " > того, что загадал компьютер!!");
             } else {
                 System.out.println("Число " + num + " < того, что загадал компьютер!!");
             }
 
-            System.out.println("Ход второго игрока, введите число");
+            System.out.print("Ход второго игрока, введите число: ");
             num = scanner.nextInt();
-            System.out.println("Второй игрок ввел число " + num);
+            System.out.println("Игрок " + player2.getName() + " ввел число: " + num);
             if (num == guessNumber) {
-                System.out.println("Вы победили");
+                System.out.println("Победил игрок " + player2.getName() + "!!!");
                 break;
-            } else if (num > guessNumber) {
+            }
+            if (num > guessNumber) {
                 System.out.println("Число " + num + " > того, что загадал компьютер!!");
             } else {
                 System.out.println("Число " + num + " < того, что ввел компьютер!!");
