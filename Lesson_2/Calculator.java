@@ -1,4 +1,5 @@
 public class Calculator {
+
     private int a;
     private char mathOperation;
     private int b;
@@ -15,24 +16,25 @@ public class Calculator {
         this.b = b;
     }
 
+        int result;
     public void calculate() {
-        int result = 0;
         switch (mathOperation) {
             case '+' -> result = a + b;
             case '-' -> result = a - b;
             case '*' -> result = a * b;
             case '/' -> result = a / b;
             case '%' -> result = a % b;
-            case '^' -> exponentiation();
+            case '^' -> pow();
             default -> System.out.println("Введенная математическая операция не поддерживается!");
         }
         System.out.println(result);
     }
 
-    public void exponentiation() {
+    private void pow() {
         int mathDegree = 1;
         for (int i = 0; i < b; i++) {
-            mathDegree = mathDegree * a;
+            mathDegree *= a;
         }
+        System.out.println(mathDegree);
     }
 }

@@ -8,8 +8,8 @@ public class CalculatorTest {
 
         System.out.println("Начало работы калькулятора");
 
-        String answer = "да";
-        while (answer.equals("да")) {
+        String answer = "yes";
+        while (answer.equals("yes")) {
             System.out.print("Введите первое число: ");
             int a = scanner.nextInt();
             calculator.setA(a);
@@ -23,10 +23,11 @@ public class CalculatorTest {
             calculator.setB(b);
 
             calculator.calculate();
+
             do {
-                System.out.print("Хотите продолжить вычисления? [да/нет]: ");
+                System.out.print("Хотите продолжить вычисления? [yes/no]: ");
                 answer = scanner.next();
-            } while (!answer.equals("да") && !answer.equals("нет"));
+            } while ((!answer.equals("yes")) && (!answer.equals("no")));
         }
         System.out.println("Конец работы калькулятора");
     }
