@@ -3,6 +3,7 @@ public class Calculator {
     private int a;
     private char mathOperation;
     private int b;
+    private int result = 0;
 
     public void setA(int a) {
         this.a = a;
@@ -16,7 +17,6 @@ public class Calculator {
         this.b = b;
     }
 
-        int result;
     public void calculate() {
         switch (mathOperation) {
             case '+' -> result = a + b;
@@ -31,10 +31,9 @@ public class Calculator {
     }
 
     private void pow() {
-        int mathDegree = 1;
+        result = 1;
         for (int i = 0; i < b; i++) {
-            mathDegree *= a;
+            result *= a;
         }
-        System.out.println(mathDegree);
     }
 }
