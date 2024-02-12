@@ -1,4 +1,7 @@
+package com.startjava.lesson_1.final_;
+
 public class Calculator {
+
     public static void main(String[] args) {
         int a = 6;
         int b = 4;
