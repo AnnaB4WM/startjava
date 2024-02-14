@@ -11,3 +11,5 @@ access.log
 doc/**/*.txt
 *.txt
 Лекции/
+options
+optionsj
